@@ -1,0 +1,110 @@
+.different_types_of_boom_section {
+  max-width: 1336px;
+  margin: 0 auto;
+
+  .boom_card_boxs {
+    display: flex;
+
+    .boom_card_box1.secand_cards_box {
+      margin-top: 59px;
+
+      + .boom_card {
+        margin-top: 111px !important;
+      }
+
+      .boom_card {
+        .boom_detalls {
+          width: 327px;
+        }
+      }
+    }
+
+    .boom_card_box1 {
+      .d_boom_heading {
+        display: flex;
+        align-items: flex-start;
+        padding: 20px 30px 30px;
+        width: 621px;
+        height: auto;
+        background: #f15a22;
+        margin-bottom: 59px;
+
+        .boom_heading {
+          font-weight: 800;
+          font-size: 40px;
+          line-height: 52px;
+          letter-spacing: -0.02em;
+          color: #ffffff;
+          margin: 0;
+        }
+      }
+
+      .boom_card {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+
+        + .boom_card {
+          margin-top: 62px;
+        }
+
+        .b_img {
+          width: 260px;
+          height: auto;
+        }
+
+        .boom_detalls {
+          width: 298px;
+          .b_c_heading_1 {
+            font-weight: 700;
+            font-size: 26px;
+            line-height: 32px;
+            letter-spacing: -0.01em;
+            color: #000000;
+            margin: 0 0 10px;
+          }
+          .b_c_heading_2 {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: -0.02em;
+            color: #000000;
+            margin: 0 0 6px;
+          }
+
+          .b_c_text {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 24px;
+            color: #000000;
+            opacity: 0.8;
+            margin: 0 0 20px;
+          }
+
+          .b_c_btn {
+            display: flex;
+            align-items: center;
+            gap: 13px;
+            background: transparent;
+            border: none;
+            padding: 0;
+
+            p {
+              font-weight: 400;
+              font-size: 16px;
+              line-height: 22px;
+              letter-spacing: -0.01em;
+              color: #f15a22;
+              text-align: left;
+
+              span {
+                font-weight: 700;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

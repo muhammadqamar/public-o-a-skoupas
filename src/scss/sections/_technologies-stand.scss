@@ -1,0 +1,89 @@
+.technologies_main_section {
+  max-width: 1440px;
+  margin: 0 auto 40px;
+  padding: 0 24px 0 104px;
+  position: relative;
+
+  .tech_main_img {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 118px;
+  }
+
+  .technologies_heading {
+    padding: 20px 30px 30px;
+    width: 385px;
+    height: auto;
+    background: #f15a22;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .tech_card_box {
+    padding-left: 327px;
+    position: relative;
+
+    .tech_card {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+
+      &:first-child {
+        margin-bottom: -30px;
+        .tech_c_text {
+          width: 551px;
+        }
+      }
+      &:last-child {
+        // margin-top: 22px;
+        align-items: flex-start;
+        .tech_c_text {
+          width: 551px;
+          margin-top: 20px;
+        }
+      }
+
+      .tech_c_img-1 {
+        width: 210px;
+        height: 177px;
+        margin-left: 75px;
+      }
+      .tech_c_img-2 {
+        width: 289px;
+        height: 200px;
+      }
+
+      .tech_c_img-3 {
+        width: 210px;
+        height: 159px;
+        margin-left: 75px;
+      }
+
+      .tech_c_text {
+        width: 483px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #000000;
+      }
+    }
+  }
+
+  .hr-line {
+    width: 1151px;
+    height: 2px;
+    background: #000000;
+    opacity: 0.2;
+    box-shadow: 0px 22px 54px rgba(0, 0, 0, 0.08);
+    margin: 125px 0 0 41px;
+  }
+}
