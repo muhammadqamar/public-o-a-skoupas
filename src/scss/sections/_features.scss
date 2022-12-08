@@ -2,6 +2,13 @@
   max-width: 1150px;
   margin: 0 auto 17px;
 
+  @media (max-width: 1180px) {
+    padding: 0 24px;
+  }
+  @media (max-width: 1081px) {
+    max-width: 855px;
+  }
+
   .feature_heading {
     font-weight: 700;
     font-size: 32px;
@@ -19,6 +26,10 @@
     gap: 16px;
     flex-wrap: wrap;
 
+    @media (max-width: 1081px) {
+      justify-content: center;
+    }
+
     .feature_card {
       width: 194px;
       height: 260px;
@@ -29,6 +40,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+
+      @media (max-width: 452px) {
+        width: 145px;
+      }
 
       &:first-child {
         background: rgba(47, 72, 88, 1);

@@ -2,40 +2,95 @@
   max-width: 1336px;
   margin: 0 auto 114px;
 
-  .find_heading_box {
+  @media (max-width: 992px) {
+    margin: 64px auto 114px;
+  }
+
+  @media (max-width: 1340px) {
+    padding: 0 24px;
+  }
+
+  .find_heading_flex_box {
     display: flex;
-    align-items: flex-start;
-    gap: 27px;
-    margin: 0 0 44px;
+    justify-content: space-between;
 
-    .find_arrow {
-      width: 37px;
-      height: 34px;
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
 
-    .find_heading {
-      font-weight: 800;
-      font-size: 40px;
-      line-height: 40px;
-      letter-spacing: -0.01em;
-      color: #000000;
-      margin: 0 0 8px;
+    .find_icon {
+      width: auto;
+      height: auto;
+      margin: 0 177px -52px 0;
+
+      @media (max-width: 768px) {
+        width: 72px;
+        margin: 0 0 0 auto;
+        padding-right: 24px;
+      }
+
+      @media (min-width: 768px) and (max-width: 992px) {
+        margin: 0 0 -52px 0;
+        padding-right: 24px;
+      }
     }
-    .find_sub_text {
-      font-weight: 400;
-      font-size: 24px;
-      line-height: 33px;
-      letter-spacing: -0.01em;
-      color: #000000;
-      margin: 0;
+
+    .find_heading_box {
+      display: flex;
+      align-items: flex-start;
+      gap: 27px;
+      margin: 0 0 44px;
+
+      @media (max-width: 499px) {
+        gap: 16px;
+      }
+
+      .find_arrow {
+        width: 37px;
+        height: 34px;
+
+        @media (max-width: 499px) {
+          width: 32px;
+          height: 28px;
+        }
+      }
+
+      .find_heading {
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.01em;
+        color: #000000;
+        margin: 0 0 8px;
+
+        @media (max-width: 499px) {
+          font-size: 32px;
+        }
+      }
+      .find_sub_text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: -0.01em;
+        color: #000000;
+        margin: 0;
+
+        @media (max-width: 499px) {
+          font-size: 18px;
+          line-height: 28px;
+        }
+      }
     }
   }
 
   .find_cards_box.box-2 {
-    justify-content: space-between;
+    // justify-content: space-between;
     .f_card {
       width: 662px;
       height: auto;
+      @media (max-width: 699px) {
+        width: 100%;
+      }
       .card {
         width: 100%;
         min-height: 253px;
@@ -43,6 +98,13 @@
         align-items: center;
         gap: 18px;
         padding-right: 37px;
+
+        @media (max-width: 699px) {
+          align-items: flex-start;
+          flex-direction: column-reverse;
+          padding-right: 0;
+        }
+
         .f_c_img {
           margin-bottom: 0;
         }
@@ -50,10 +112,25 @@
         .f_c_heading {
           max-width: 376px;
           margin: 39px 0 8px;
+
+          @media (max-width: 699px) {
+            margin: 20px 16px 8px;
+          }
+          @media (max-width: 934px) {
+            max-width: 100%;
+          }
         }
         .f_c_text {
           max-width: 356px;
           margin: 0 0 20px;
+
+          @media (max-width: 699px) {
+            margin: 0 16px 20px;
+          }
+
+          @media (max-width: 934px) {
+            max-width: 100%;
+          }
         }
       }
 
@@ -76,11 +153,17 @@
     align-items: center;
     gap: 9px;
     margin-bottom: 38px;
+    justify-content: center;
+    flex-wrap: wrap;
 
     .f_card {
       width: 439px;
       height: auto;
 
+      @media (max-width: 934px) {
+        flex-grow: 1;
+        width: 100%;
+      }
       .card {
         width: 100%;
         min-height: 440px;
@@ -102,6 +185,14 @@
           color: #000000;
           margin: 0 40px 8px;
           max-width: 241px;
+
+          @media (max-width: 699px) {
+            margin: 0 16px 20px;
+          }
+
+          @media (max-width: 934px) {
+            max-width: 100%;
+          }
         }
         .f_c_text {
           font-weight: 400;
@@ -110,6 +201,14 @@
           color: #000000;
           margin: 0 40px 10px;
           max-width: 300px;
+
+          @media (max-width: 699px) {
+            margin: 0 16px 16px;
+          }
+
+          @media (max-width: 934px) {
+            max-width: 100%;
+          }
         }
       }
       .f_c_btn {
@@ -138,6 +237,10 @@
         display: flex;
         align-items: center;
         gap: 9px;
+
+        @media (max-width: 650px) {
+          flex-direction: column;
+        }
 
         .f_c_btn_1 {
           width: 100%;
