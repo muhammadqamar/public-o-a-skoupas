@@ -217,16 +217,20 @@
         background: #13e6cd;
         border-radius: 8px;
         border: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
+
         font-weight: 700;
         font-size: 16px;
         line-height: 22px;
         letter-spacing: -0.01em;
         color: #000000;
         padding: 24px 22px;
+
+        & a {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 16px;
+        }
       }
 
       .btn-3 {
@@ -248,11 +252,7 @@
           background: #a2cdf5;
           border-radius: 8px;
           border: none;
-          display: flex;
-          text-align: left;
-          align-items: center;
-          justify-content: center;
-          gap: 9px;
+
           font-weight: 700;
           font-size: 16px;
           line-height: 22px;
@@ -260,13 +260,20 @@
           color: #000000;
           padding: 24px 22px;
 
-          & span {
-            width: 20px;
-            height: auto;
-            flex-shrink: 0;
-            & img {
-              width: auto;
+          & a {
+            display: flex;
+            text-align: left;
+            align-items: center;
+            justify-content: center;
+            gap: 9px;
+            & span {
+              width: 20px;
               height: auto;
+              flex-shrink: 0;
+              & img {
+                width: auto;
+                height: auto;
+              }
             }
           }
         }

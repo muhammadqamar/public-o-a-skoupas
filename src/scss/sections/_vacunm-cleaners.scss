@@ -6,6 +6,218 @@
     padding: 0 24px;
   }
 
+  .vacuum_tabs {
+    // display: none !important;
+  }
+
+  // boom -tab
+  .brooms_tabs {
+    // display: none !important;
+    height: auto !important;
+    padding-bottom: 24px !important;
+    @media (min-width: 830px) and (max-width: 1060px) {
+      padding: 20px 24px 278px 48px !important;
+    }
+    @media (max-width: 830px) {
+      padding: 20px 16px 278px !important;
+    }
+    .va_cards_box {
+      .va_card {
+        &:last-child,
+        &:nth-child(3) {
+          flex-basis: 692px;
+          min-height: auto !important;
+        }
+      }
+    }
+  }
+
+  // robot_vacuum
+  .robot_vacuum {
+    // display: none !important;
+  }
+  .va_cl_main.robot_vacuum {
+    @media (min-width: 830px) and (max-width: 1160px) {
+      height: auto !important;
+      padding: 20px 24px 278px 48px !important;
+    }
+  }
+
+  .va_cl_categories.robot_vacuum {
+    min-height: 193px;
+    padding: 42px 40px 40px 80px;
+    background: #90e387;
+
+    @media (max-width: 699px) {
+      padding: 44px 16px;
+    }
+
+    &::before {
+      top: -130px;
+      left: -68px;
+      background-image: url("../images/r-tip.png");
+
+      @media (max-width: 1240px) {
+        top: -76px;
+        left: -47px;
+      }
+    }
+
+    .cat_card_text {
+      width: 335px;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: #000000;
+
+      @media (max-width: 499px) {
+        width: auto;
+      }
+    }
+  }
+
+  // steam_cleaners_tabs
+
+  .steam_cleaners_tabs {
+    // display: none !important;
+  }
+
+  .va_cl_main.steam_cleaners_tabs {
+    height: auto !important;
+    padding-bottom: 40px !important;
+    @media (min-width: 830px) and (max-width: 1060px) {
+      padding: 20px 24px 278px 48px !important;
+    }
+    @media (max-width: 830px) {
+      padding: 20px 16px 278px !important;
+    }
+    .va_cards_box {
+      .va_card {
+        &:last-child,
+        &:nth-child(3) {
+          flex-basis: 692px;
+          min-height: auto !important;
+        }
+      }
+    }
+  }
+  .va_cl_categories.steam_cleaners_tabs {
+    width: 755px;
+    min-height: 156px;
+    padding: 39px 55px 40px 204px;
+    background: rgba(209, 200, 233, 1);
+
+    margin-top: -40px;
+
+    @media (max-width: 810px) {
+      width: 100%;
+    }
+
+    @media (max-width: 699px) {
+      padding: 44px 16px;
+    }
+
+    &::before {
+      width: 178.81px;
+      height: 126.17px;
+      top: 12px;
+      left: -16px;
+      background-image: url("../images/st-tip.png");
+
+      @media (max-width: 699px) {
+        width: 146px;
+        height: 110px;
+        top: -76px;
+        left: -23px;
+      }
+    }
+
+    .cat_card_text {
+      width: 100%;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.02em;
+      color: #000000;
+
+      @media (max-width: 499px) {
+        width: auto;
+      }
+    }
+  }
+
+  // hand brooms_tabs
+
+  .va_cl_main.hand_brooms_tabs {
+    height: auto !important;
+    padding-bottom: 87px !important;
+
+    overflow: hidden;
+    @media (min-width: 830px) and (max-width: 1060px) {
+      padding: 20px 24px 278px 48px !important;
+    }
+    @media (max-width: 830px) {
+      padding: 20px 16px 278px !important;
+    }
+
+    .vauum-banner-img {
+      bottom: -35px;
+    }
+    .va_cards_box {
+      .va_card {
+        &:first-child {
+          flex-basis: 692px;
+          min-height: auto !important;
+        }
+
+        &:nth-child(2),
+        &:last-child {
+          min-height: 287px !important;
+          @media (max-width: 767px) {
+            min-height: 165px !important;
+          }
+        }
+      }
+    }
+  }
+  .va_cl_categories.hand_brooms_tabs {
+    min-height: 143px;
+    width: 757px;
+    padding: 30px 52px 40px 79px;
+    background: rgba(144, 243, 255, 1);
+    margin-left: -13px;
+
+    @media (max-width: 830px) {
+      width: 100%;
+      margin-left: 0;
+    }
+
+    @media (max-width: 699px) {
+      padding: 44px 16px;
+    }
+
+    &::before {
+      top: -130px;
+      left: -68px;
+      background-image: url("../images/hb-tip.png");
+
+      @media (max-width: 1240px) {
+        top: -62px;
+        left: -35px;
+      }
+    }
+
+    .cat_card_text {
+      font-weight: 800;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.02em;
+      color: #000000;
+    }
+  }
+
+  // origin
   .va_cl_main {
     width: 100%;
     height: 577px;
@@ -24,6 +236,7 @@
     }
 
     @media (max-width: 830px) {
+      height: auto;
       padding: 20px 16px 278px;
     }
 
@@ -106,12 +319,13 @@
           letter-spacing: -0.03em;
           color: #000000;
           margin: 0 0 8px;
+          display: flex;
+          gap: 10px;
 
           & span {
             & img {
-              width: auto;
-              height: auto;
-              margin-right: 10px;
+              width: 24px;
+              height: 24px;
             }
           }
         }
