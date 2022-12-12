@@ -41,13 +41,17 @@
       align-items: center;
       justify-content: space-between;
       cursor: pointer;
-
       &:hover {
         background: rgba(245, 245, 245, 1);
       }
 
       @media (max-width: 452px) {
         width: 145px;
+      }
+
+      &:first-child {
+        background: rgba(47, 72, 88, 1);
+        color: #fff;
       }
 
       .fea_heading {
