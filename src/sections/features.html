@@ -2,35 +2,35 @@
   <h1 class="feature_heading">Χαρακτηριστικά που κάνουν τη διαφορά</h1>
 
   <div class="features_card_box">
-    <div class="feature_card" onclick="openTab('vacuum-tab')">
+    <div id="v-t" class="feature_card tab-name" onclick="openTab('vacuum-tab'),TabColor('v-t')">
       <img src="./images/fea-1.png" alt="" class="fea_img-1" />
       <h4 class="fea_heading">
         Ηλεκτρικές <br />
         Σκούπες
       </h4>
     </div>
-    <div class="feature_card" onclick="openTab('brooms-site')">
+    <div id="b-t" class="feature_card tab-name" onclick="openTab('brooms-site'),TabColor('b-t')">
       <img src="./images/fea-2.png" alt="" class="fea_img-2" />
       <h4 class="fea_heading">
         Σκούπες <br />
         Stick
       </h4>
     </div>
-    <div class="feature_card" onclick="openTab('robot-vacuum')">
+    <div id="r-t" class="feature_card tab-name" onclick="openTab('robot-vacuum'),TabColor('r-t')">
       <img src="./images/fea-3.png" alt="" class="fea_img-3" />
       <h4 class="fea_heading">
         Σκούπες <br />
         Robot
       </h4>
     </div>
-    <div class="feature_card" onclick="openTab('steam-cleaners')">
+    <div id="s-t" class="feature_card tab-name" onclick="openTab('steam-cleaners'),TabColor('s-t')">
       <img src="./images/fea-4.png" alt="" class="fea_img-4" />
       <h4 class="fea_heading">
         Σκουπάκια <br />
         Χειρός
       </h4>
     </div>
-    <div class="feature_card" onclick="openTab('hand-brooms')">
+    <div id="h-t" class="feature_card tab-name" onclick="openTab('hand-brooms'),TabColor('h-t')">
       <img src="./images/fea-5.png" alt="" class="fea_img-5" />
       <h4 class="fea_heading">
         Ατμοκα- <br />
@@ -432,5 +432,15 @@
       x[i].style.display = "none";
     }
     document.getElementById(tabName).style.display = "block";
+  }
+  function TabColor(tabName) {
+    var i;
+    var tab = document.getElementsByClassName("tab-name");
+    for (i = 0; i < tab.length; i++) {
+      tab[i].style.background = "#ffffff";
+      tab[i].style.color = "#000000";
+    }
+    document.getElementById(tabName).style.background = "rgba(47, 72, 88, 1)";
+    document.getElementById(tabName).style.color = "#ffffff";
   }
 </script>
