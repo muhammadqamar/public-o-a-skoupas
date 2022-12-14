@@ -19,9 +19,9 @@
     }
 
     .find_icon {
-      width: auto;
+      width: 72px;
       height: auto;
-      margin: 0 177px -52px 0;
+      margin: 53px 177px 0 0;
 
       @media (max-width: 768px) {
         width: 72px;
@@ -30,7 +30,7 @@
       }
 
       @media (min-width: 768px) and (max-width: 992px) {
-        margin: 0 0 -52px 0;
+        margin: 67px 0 0 0;
         padding-right: 24px;
       }
     }
