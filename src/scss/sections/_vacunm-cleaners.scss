@@ -92,6 +92,10 @@
     @media (max-width: 830px) {
       padding: 20px 16px 278px !important;
     }
+
+    @media (max-width: 1160px) {
+      flex-direction: column;
+    }
     .va_cards_box {
       .va_card {
         &:last-child,
@@ -256,6 +260,10 @@
       color: #000000;
       margin-top: 28px;
       width: 225px;
+
+      @media (max-width: 699px) {
+        font-size: 28px;
+      }
 
       @media (max-width: 1060px) {
         width: auto;
