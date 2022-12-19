@@ -39,11 +39,12 @@
     }
 
     .boom_card_box1 {
+      flex: 1;
       .d_boom_heading {
         display: flex;
         align-items: flex-start;
         padding: 20px 18px 30px;
-        width: 621px;
+        width: auto;
         height: auto;
         background: #f15a22;
         margin-bottom: 59px;
