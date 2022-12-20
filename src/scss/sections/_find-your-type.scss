@@ -211,30 +211,39 @@
           }
         }
       }
-      .f_c_btn {
+      a {
         width: 100%;
         min-height: 100px;
-        background: #13e6cd;
-        border-radius: 8px;
-        border: none;
 
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #000000;
-        padding: 24px 22px;
+        .f_c_btn {
+          width: 100%;
+          min-height: 100px;
 
-        & a {
           display: flex;
           align-items: center;
           justify-content: center;
           gap: 16px;
+          background: #13e6cd;
+          border-radius: 8px;
+          border: none;
+
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 22px;
+          letter-spacing: -0.01em;
+          color: #000000;
+          padding: 24px 22px;
         }
       }
+      a {
+        width: 100%;
+        min-height: 100px;
+        .btn-3 {
+          width: 100%;
+          min-height: 100px;
 
-      .btn-3 {
-        background: #90e387;
+          background: #90e387;
+        }
       }
 
       .btn_box {
@@ -246,26 +255,30 @@
           flex-direction: column;
         }
 
-        .f_c_btn_1 {
+        a {
           width: 100%;
           min-height: 100px;
-          background: #a2cdf5;
-          border-radius: 8px;
-          border: none;
 
-          font-weight: 700;
-          font-size: 16px;
-          line-height: 22px;
-          letter-spacing: -0.01em;
-          color: #000000;
-          padding: 24px 16px;
+          .f_c_btn_1 {
+            width: 100%;
+            min-height: 100px;
 
-          & a {
             display: flex;
             text-align: left;
             align-items: center;
             justify-content: center;
             gap: 9px;
+            background: #a2cdf5;
+            border-radius: 8px;
+            border: none;
+
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #000000;
+            padding: 24px 16px;
+
             & span {
               width: 20px;
               height: auto;
