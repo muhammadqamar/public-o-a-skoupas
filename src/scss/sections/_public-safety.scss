@@ -8,7 +8,7 @@
   padding: 26px 26px 0;
 
   @media (max-width: 768px) {
-    gap: 32px;
+    gap: 48px;
     flex-direction: column;
     padding: 0 24px 0;
   }
@@ -19,12 +19,25 @@
     @media (max-width: 768px) {
       flex-basis: auto;
     }
-
-    .public-img {
+    .desk-link {
       width: auto;
       height: auto;
-      margin-bottom: 19px;
+
+      .public-img {
+        width: auto;
+        height: auto;
+        margin-bottom: 19px;
+      }
     }
+
+    .about-two {
+      padding-right: 20px;
+
+      @media (max-width: 768px) {
+        padding-right: 0;
+      }
+    }
+
     .img-about {
       font-weight: 600;
       font-size: 16px;
