@@ -87,8 +87,12 @@
           width: 260px;
           height: auto;
 
-          @media (max-width: 992px) {
-            width: auto;
+          @media (max-width: 699px) {
+            width: 185px;
+          }
+
+          @media (min-width: 699px) and (max-width: 992px) {
+            width: 280px;
           }
         }
 

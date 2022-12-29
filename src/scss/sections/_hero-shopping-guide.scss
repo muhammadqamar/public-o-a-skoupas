@@ -47,6 +47,10 @@
         background: #ffffff;
         margin: 0;
 
+        @media (max-width: 399px) {
+          width: 209px;
+        }
+
         @media (max-width: 699px) {
           padding: 10px;
           font-size: 32px;
