@@ -139,10 +139,18 @@
         .f_c_btn_1 {
           background: rgba(217, 220, 255, 1);
           padding: 24px 56px;
+
+          @media (max-width: 899px) {
+            padding: 24px;
+          }
         }
         .btn-2 {
           background: rgba(237, 213, 178, 1);
           padding: 24px 70px;
+
+          @media (max-width: 899px) {
+            padding: 24px;
+          }
         }
       }
     }
@@ -155,6 +163,10 @@
     margin-bottom: 38px;
     justify-content: center;
     flex-wrap: wrap;
+
+    @media (max-width: 1382px) {
+      flex-direction: column;
+    }
 
     .f_card {
       width: 439px;
@@ -233,6 +245,10 @@
           letter-spacing: -0.01em;
           color: #000000;
           padding: 24px 22px;
+
+          @media (max-width: 699px) {
+            text-align: left;
+          }
         }
       }
       a {
@@ -243,6 +259,9 @@
           min-height: 100px;
 
           background: #90e387;
+          @media (max-width: 699px) {
+            text-align: left;
+          }
         }
       }
 
