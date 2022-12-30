@@ -291,6 +291,10 @@
         width: auto;
       }
 
+      @media (max-width: 992px) {
+        display: none !important;
+      }
+
       .va_card {
         width: 341px;
         height: auto;
