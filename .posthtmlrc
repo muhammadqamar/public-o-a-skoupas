@@ -3,6 +3,10 @@
     "posthtml-extend": {
       "root": "./src/"
     },
+    "posthtml-modules": {
+      "root": "./src/",
+      "attributeAsLocals": true
+    },
     "posthtml-include": {
       "root": "./src/"
     },

@@ -1,6 +1,20 @@
-@forward "./fonts";
-@forward "./reset";
 @forward "./variables";
-@forward "./external";
-@forward "./typography";
-@forward "./sections";
+
+[data-holy] {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  // line-height: 1.5;
+  // font: normal 0.875rem / 1.5 "Zona Pro", "ZonaPro-Regular", "Open Sans",
+  //   sans-serif;
+
+  // @for $i from 1 through 6 {
+  //   h#{$i} {
+  //     font-family: "Zona Pro", "ZonaPro-Regular", "Open Sans", sans-serif;
+  //   }
+  // }
+
+  @import "./reset";
+  @import "./external";
+  @import "./typography";
+  @import "./sections";
+}

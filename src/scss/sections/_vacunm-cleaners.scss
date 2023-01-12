@@ -272,6 +272,10 @@
       & span {
         & img {
           margin-top: 16px;
+
+          @media (width < 993px) {
+            display: none;
+          }
         }
       }
     }

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="el">
+<module href="./src/layouts/public-head.html"></module>
+<body class="mdc-typography">
+<app-root _nghost-pbc-c24="" ng-version="13.2.7">
+    <div _ngcontent-pbc-c24="" class="position-relative">
+        <!----><!----><!---->
+        <section _ngcontent-pbc-c24=""><!----></section>
+        <!---->
+        <div _ngcontent-pbc-c24="" id="mainContainer">
+            <router-outlet _ngcontent-pbc-c24=""></router-outlet>
+            <app-main-category _nghost-pbc-c46="">
+                <app-breadcrumb _ngcontent-pbc-c46="" _nghost-pbc-c42="">
+                    <section _ngcontent-pbc-c42="" class="pt-3">
+                        <div _ngcontent-pbc-c42="" class="container">
+                            <ul _ngcontent-pbc-c42="" class="nav row row-small flex-nowrap row-lg-scroll align-items-center">
+                                <li _ngcontent-pbc-c42="" class="col col-auto">
+                                    <app-mdc-icon-button _ngcontent-pbc-c42="" color="secondary" size="small" icon="home" title="Αρχική" class="d-flex align-items-center" _nghost-pbc-c18="">
+                                        <!---->
+                                        <a _ngcontent-pbc-c18="" tabindex="-1" class="mdc-icon-button animate mdc-icon-button--secondary mdc-icon-button--small" href="/" title="home" aria-label="home">
+                                            <span _ngcontent-pbc-c18="" class="mdc-icon-button__icon ic-home"></span>
+                                        </a>
+                                        <!---->
+                                    </app-mdc-icon-button>
+                                </li>
+                                <li _ngcontent-pbc-c42="" class="col col-auto"><span _ngcontent-pbc-c42="" class="ic-chevron-right text-text-secondary"></span></li>
+                                <!----><!---->
+                                <li _ngcontent-pbc-c42="" class="col col-auto">
+                                    <app-mdc-link-button _ngcontent-pbc-c42="" size="small" color="black" class="d-flex align-items-center" _nghost-pbc-c16="">
+                                        <a _ngcontent-pbc-c16="" type="button" class="mdc-link-button animate mdc-link-button--black mdc-link-button--small text-left" href="/root/landing">
+                                            <span _ngcontent-pbc-c16="" class="mdc-link-button__label"> Landing </span>
+                                        </a>
+                                        <!----><!----><!----><!----><!---->
+                                    </app-mdc-link-button>
+                                </li>
+                                <li _ngcontent-pbc-c42="" class="col col-auto"><span _ngcontent-pbc-c42="" class="ic-chevron-right text-text-secondary"></span></li>
+                                <!----><!----><!----><!----><!----><!---->
+                                <li _ngcontent-pbc-c42="" class="col col-auto d-flex align-items-center"><span _ngcontent-pbc-c42="" class="mdc-typography--caption mdc-typography--text-secondary last-row">{{title}}</span></li>
+                                <!----><!----><!----><!---->
+                            </ul>
+                        </div>
+                    </section>
+                </app-breadcrumb>
+                <div _ngcontent-pbc-c46="" class="container">
+                    <aside _ngcontent-pbc-c46="" class="d-none d-sm-block">
+                        <mdc-card _ngcontent-pbc-c46="" _nghost-pbc-c43="">
+                            <div _ngcontent-pbc-c43="" class="mdc-card mdc-card--categories mdc-card--elevation">
+                                <div _ngcontent-pbc-c43="" class="mdc-card__content mdc-card__content--scrolled">
+                                    <category-tree _ngcontent-pbc-c46="" _nghost-pbc-c45="">
+                                        <div _ngcontent-pbc-c45="" class="mdc-list">
+                                            <a _ngcontent-pbc-c45="" routerlinkactive="mdc-list-item--disabled" class="mdc-list-item" href="/root/landing">
+                                                <div _ngcontent-pbc-c45="" class="mdc-list-item__graphic"><!----></div>
+                                                <div _ngcontent-pbc-c45="" class="mdc-list-item__text">Landing</div>
+                                            </a>
+                                            <a _ngcontent-pbc-c45="" routerlinkactive="mdc-list-item--disabled" class="mdc-list-item mdc-list-item--disabled" href="/root/landing/test-hidden-page">
+                                                <div _ngcontent-pbc-c45="" class="mdc-list-item__graphic ic-sublevel text-primary"><!----></div>
+                                                <div _ngcontent-pbc-c45="" class="mdc-list-item__text">{{title}}</div>
+                                            </a>
+                                            <!----><!---->
+                                        </div>
+                                        <!----><!---->
+                                    </category-tree>
+                                </div>
+                            </div>
+                        </mdc-card>
+                    </aside>
+                    <!---->
+                    <main _ngcontent-pbc-c46="">
+                        <div _ngcontent-pbc-c46="" class="container">
+                            <section _ngcontent-pbc-c46="" class="header--section">
+                                <header _ngcontent-pbc-c46="">
+                                    <div _ngcontent-pbc-c46="" class="row row-small justify-content-between align-items-center flex-column flex-sm-row">
+                                        <div _ngcontent-pbc-c46="" class="col col-auto">
+                                          <h1 _ngcontent-pbc-c46="" class="mdc-typography--headline5">H1 {{title}}</h1>
+                                        </div>
+                                    </div>
+                                </header>
+                            </section>
+                            <div _ngcontent-pbc-c46="">
+                                <app-dynamic-reusables _ngcontent-pbc-c46="" class="app-dynamic-reusables" _nghost-pbc-c22="">
+                                    <app-html-reusable _nghost-pbc-c52="">
+                                      <div _ngcontent-pbc-c52="" class="html-reusable">
+                                        <content></content>
+                                      </div>
+                                    </app-html-reusable>
+                                    <!---->
+                                </app-dynamic-reusables>
+                                <!----><!---->
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </app-main-category>
+            <!---->
+        </div>
+        <!----><!---->
+    </div>
+</app-root>
+  </body>
+</html>
