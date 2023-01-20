@@ -1,3 +1,9 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
 .different_types_of_boom_section {
   max-width: 1336px;
   margin: 0 auto;
@@ -55,16 +61,18 @@
         }
 
         .boom_heading {
-          font-weight: 800;
-          font-size: 40px;
-          line-height: 52px;
+          @extend %bold;
+          font-size: fluid-rem(1.75rem, 2.5rem);
+          // font-weight: 800;
+          // font-size: 40px;
+          // line-height: 52px;
           letter-spacing: -0.02em;
           color: #ffffff;
           margin: 0;
 
           @media (max-width: 650px) {
-            font-size: 32px;
-            line-height: 42px;
+            // font-size: 32px;
+            // line-height: 42px;
           }
         }
       }
@@ -109,9 +117,10 @@
             text-align: center;
           }
           .b_c_heading_1 {
-            font-weight: 700;
-            font-size: 26px;
-            line-height: 32px;
+            @extend %sectionTitle;
+            // font-weight: 700;
+            // font-size: 26px;
+            // line-height: 32px;
             letter-spacing: -0.01em;
             color: #000000;
             margin: 0 0 10px;
@@ -147,9 +156,10 @@
               gap: 13px;
 
               p {
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 22px;
+                @extend %sectionButton;
+                // font-weight: 400;
+                // font-size: 16px;
+                // line-height: 22px;
                 letter-spacing: -0.01em;
                 color: #f15a22;
                 text-align: left;

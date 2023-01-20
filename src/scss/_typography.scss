@@ -1,15 +1,28 @@
-a {
-  cursor: pointer;
-  text-decoration: none;
-  color: inherit;
+@use "sass:color" as *;
+@use "./functions" as *;
+
+%bold {
+  font-family: v(font-family-bold);
 }
 
-button {
-  cursor: pointer;
+%semibold {
+  font-family: v(font-family-semi);
 }
 
-svg,
-img {
-  vertical-align: middle;
-  display: inline;
+%sectionTitle {
+  @extend %bold;
+  font-size: fluid-rem(1.25rem, 1.5rem);
+  line-height: 1.333;
+  margin-block-end: 0.5em;
+}
+
+%sectionText {
+  font-size: fluid-rem(0.875rem, 1rem);
+  line-height: 1.618;
+}
+
+%sectionButton {
+  @extend %bold;
+  font-size: 1rem;
+  line-height: 1.25;
 }

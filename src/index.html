@@ -2306,7 +2306,7 @@
         document.getElementById(tabName).style.color = "#ffffff";
       }
 
-      const sliderOptions = {
+      var sliderOptions = {
         type: "loop",
         drag: "free",
         perPage: 2.5,
@@ -2314,24 +2314,27 @@
         arrows: false,
         pagination: false,
         breakpoints: {
+          375: {
+            perPage: 1,
+          },
           699: {
             perPage: 1.5,
           },
         },
       };
 
-      const characteristicsSlider = new Splide(
+      var characteristicsSlider = new Splide(
         ".section--characteristics",
         sliderOptions
       );
 
-      const stickSlider = new Splide(".section--stick", sliderOptions);
+      var stickSlider = new Splide(".section--stick", sliderOptions);
 
-      const robotSlider = new Splide(".section--robot", sliderOptions);
+      var robotSlider = new Splide(".section--robot", sliderOptions);
 
-      const handwipesSlider = new Splide(".section--handwipes", sliderOptions);
+      var handwipesSlider = new Splide(".section--handwipes", sliderOptions);
 
-      const steamcleanersSlider = new Splide(
+      var steamcleanersSlider = new Splide(
         ".section--steamcleaners",
         sliderOptions
       );

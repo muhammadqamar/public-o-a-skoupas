@@ -1,3 +1,9 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
 .hero__shopping__section {
   max-width: 1440px;
   margin: 29px auto 32px;
@@ -35,9 +41,9 @@
 
     .h_b_text_box {
       .h_b_m_heading {
-        font-weight: 600;
-        font-size: 56px;
-        line-height: 32px;
+        @extend %semibold;
+        font-size: fluid-rem(1.5rem, 2.5rem);
+        line-height: 1.333;
         text-align: left;
         letter-spacing: -0.02em;
         color: #f15a22;
@@ -54,16 +60,19 @@
 
         @media (max-width: 699px) {
           padding: 10px;
-          font-size: 32px;
+          // font-size: 32px;
         }
       }
 
       .h_b_s_heading {
-        font-weight: 800;
-        font-size: 72px;
-        line-height: 32px;
-        text-align: center;
+        @extend %bold;
+        font-size: fluid-rem(1.75rem, 3rem);
+        line-height: 1.333;
         letter-spacing: -0.02em;
+        // font-weight: 800;
+        // font-size: 72px;
+        // line-height: 32px;
+        text-align: center;
         color: #ffffff;
         display: flex;
         align-items: flex-start;
@@ -72,7 +81,7 @@
         background: #f15a22;
         @media (max-width: 699px) {
           padding: 16px;
-          font-size: 42px;
+          // font-size: 42px;
         }
       }
     }

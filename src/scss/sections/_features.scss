@@ -1,4 +1,8 @@
+@use "sass:color" as c;
 @use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
 
 .features_main_section {
   max-width: 1150px;
@@ -12,9 +16,12 @@
   }
 
   .feature_heading {
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 48px;
+    @extend %bold;
+    font-size: fluid-rem(1.25rem, 2rem);
+    line-height: 1.333;
+    // font-weight: 700;
+    // font-size: 32px;
+    // line-height: 48px;
     letter-spacing: -0.02em;
     color: #000000;
     text-align: center;
@@ -81,7 +88,7 @@
 
         .fea_heading {
           font-weight: 400;
-          font-size: 20px;
+          font-size: fluid-rem(1rem, 1.25rem);
           line-height: 24px;
           text-align: center;
           margin: 22px 0 0;
@@ -204,7 +211,15 @@
             display: flex;
             gap: 10px;
 
+            @media (max-width: 374px) {
+              word-break: break-all;
+            }
+
             & span {
+              @media (max-width: 374px) {
+                display: none;
+              }
+
               & img {
                 width: 24px;
                 height: 24px;

@@ -1,3 +1,9 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
 .find_your_type_section {
   max-width: 1336px;
   margin: 0 auto 114px;
@@ -56,28 +62,33 @@
       }
 
       .find_heading {
-        font-weight: 800;
-        font-size: 40px;
-        line-height: 40px;
+        @extend %bold;
+        font-size: fluid-rem(1.5rem, 2.5rem);
+        line-height: 1.333;
+        // font-weight: 800;
+        // font-size: 40px;
+        // line-height: 40px;
         letter-spacing: -0.01em;
         color: #000000;
         margin: 0 0 8px;
 
         @media (max-width: 499px) {
-          font-size: 32px;
+          // font-size: 32px;
         }
       }
       .find_sub_text {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 33px;
+        font-size: fluid-rem(1rem, 1.5rem);
+        line-height: 1.5;
+        // font-weight: 400;
+        // font-size: 24px;
+        // line-height: 33px;
         letter-spacing: -0.01em;
         color: #000000;
         margin: 0;
 
         @media (max-width: 499px) {
-          font-size: 18px;
-          line-height: 28px;
+          // font-size: 18px;
+          // line-height: 28px;
         }
       }
     }
@@ -197,9 +208,10 @@
           margin-bottom: 25px;
         }
         .f_c_heading {
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 30px;
+          @extend %sectionTitle;
+          // font-weight: 700;
+          // font-size: 24px;
+          // line-height: 30px;
           letter-spacing: -0.02em;
           color: #000000;
           margin: 0 40px 8px;

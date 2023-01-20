@@ -7,7 +7,7 @@
     "serve": "http-server -p 1337 dist -c-1",
     "prestart": "rimraf .parcel-cache dist/*",
     "prebuild": "rimraf .parcel-cache dist/*",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/*.html"
   },
   "keywords": [],
   "author": "",
