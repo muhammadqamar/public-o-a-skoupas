@@ -3,18 +3,10 @@
 [data-holy] {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  // line-height: 1.5;
-  // font: normal 0.875rem / 1.5 "Zona Pro", "ZonaPro-Regular", "Open Sans",
-  //   sans-serif;
-
-  // @for $i from 1 through 6 {
-  //   h#{$i} {
-  //     font-family: "Zona Pro", "ZonaPro-Regular", "Open Sans", sans-serif;
-  //   }
-  // }
+  font: normal 1rem / 1.5 var(--font-family-regular);
 
   @import "./reset";
   @import "./external";
-  @import "./typography";
+  @import "./components";
   @import "./sections";
 }

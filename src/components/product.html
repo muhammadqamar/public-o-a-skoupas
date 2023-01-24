@@ -1,0 +1,25 @@
+<article class="product">
+  <figure class="product__image-wrapper">
+    <picture class="product__image">
+      <source
+        srcset="./assets/product-{{image}}.png"
+        media="(max-width: 768px)"
+      />
+      <img src="./assets/product-{{image}}@2x.png" alt="" />
+    </picture>
+  </figure>
+  <header class="product__header">
+    <h4 class="product__title">{{title}}</h4>
+    <h5 class="product__subtitle">{{subtitle}}</h5>
+    <p class="product__text">{{text}}</p>
+    <a href="{{cta.url}}" class="product__cta button">
+      <span class="button__text">
+        Δες εδώ {{cta.text}}
+        <b>{{title}}</b>
+      </span>
+      <svg class="button__icon" viewBox="0 0 24 24">
+        <use xlink:href="#arrow-right"></use>
+      </svg>
+    </a>
+  </header>
+</article>

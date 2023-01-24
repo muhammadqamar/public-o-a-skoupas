@@ -1,0 +1,64 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
+.payment {
+  border-top: 0.15em solid v("light-grey");
+  padding-block: fluid-rem(2rem, 5rem);
+  padding-inline: fluid-rem(0rem, 1.5rem);
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(#{fluid-rem(15rem, 20rem)}, 1fr)
+  );
+  gap: 0.75rem;
+
+  &-article {
+    display: grid;
+    gap: 1rem;
+    font-family: v("font-family-bold");
+
+    &__header {
+      border-radius: 1rem;
+      padding: fluid-rem(1.25rem, 1.5rem) fluid-rem(1.5rem, 2rem);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    &__image {
+      flex-basis: fluid-rem(7rem, 10rem);
+      flex-grow: 1;
+      max-inline-size: fluid-rem(7rem, 10rem);
+      margin-inline: auto;
+    }
+
+    &__title {
+      font-size: fluid-rem(1rem, 1.15rem);
+      flex: 999 1 0;
+      min-inline-size: 60%;
+      line-height: 1.25;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__text {
+      font-size: fluid-rem(0.875rem, 1rem);
+    }
+
+    &:first-child {
+      .payment-article__header {
+        background-color: #562d89;
+        color: v("white");
+      }
+    }
+
+    &:last-child {
+      .payment-article__header {
+        background-color: #febf2e;
+      }
+    }
+  }
+}

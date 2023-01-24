@@ -1,0 +1,9 @@
+{
+  "plugins": {
+    "postcss-logical": {},
+    "postcss-media-minmax": {},
+    "cssnano": {
+      "preset": "default"
+    }
+  }
+}

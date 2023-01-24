@@ -1,0 +1,23 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
+.section--products {
+  margin-block: fluid-rem(1.5rem, 2.5rem);
+
+  @media (width >= 768px) {
+    columns: 2;
+    column-gap: 2rem;
+  }
+
+  .section__title {
+    padding: 0.5em;
+    font-size: fluid-rem(1.75rem, 2.5rem);
+    font-family: v("font-family-bold");
+    line-height: 1.333;
+    color: v("white");
+    background-color: v("brand");
+  }
+}

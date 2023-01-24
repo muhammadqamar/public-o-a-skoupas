@@ -1,0 +1,55 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
+.main-article {
+  &__header {
+    position: relative;
+    aspect-ratio: 1440 / 550;
+    background: url("../assets/header-image@2x.jpg") no-repeat center / 100%
+        auto,
+      v(brand);
+
+    @media (width < 600px) {
+      aspect-ratio: 1 / 1;
+      background: url("../assets/header-image@2x.jpg") no-repeat center / cover,
+        v(brand);
+    }
+  }
+
+  &__title {
+    font-family: v(font-family-bold);
+    line-height: 1.25;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0, -50%);
+
+    @media (width < 600px) {
+      left: 0.5rem;
+    }
+
+    @media (width < 475px) {
+      top: 0.5rem;
+      transform: translate(0);
+    }
+
+    span {
+      padding: 0.5em 0.75em;
+      width: min-content;
+      display: block;
+      white-space: nowrap;
+      color: v("brand");
+      background-color: v("white");
+      font-size: fluid-rem(1.5rem, 2.5rem);
+
+      &:last-child {
+        color: v("white");
+        background-color: v("brand");
+        font-size: fluid-rem(1.75rem, 3rem);
+      }
+    }
+  }
+}

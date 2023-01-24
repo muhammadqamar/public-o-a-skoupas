@@ -97,7 +97,7 @@
 @function fluid-rem(
   $min: 1rem,
   $max: 3rem,
-  $breakpoints: 320 $container,
+  $breakpoints: $mobile $container,
   $remValue: 16
 ) {
   $minSizeStriped: strip($min);
@@ -123,7 +123,7 @@
 @function fluid-px(
   $min: 16px,
   $max: 32px,
-  $breakpoints: 320 $container,
+  $breakpoints: $mobile $container,
   $remValue: 16
 ) {
   $stripedMin: strip($min);

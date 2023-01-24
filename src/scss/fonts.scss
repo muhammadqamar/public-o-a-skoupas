@@ -1,0 +1,58 @@
+@font-face {
+  font-family: ZonaPro-Bold;
+  src: url("https://www.public.gr/ZonaPro-Bold.3d9bd594c24fced5.woff2")
+      format("woff2"),
+    url("https://www.public.gr/ZonaPro-Bold.9c1f2bc0bf15ea8f.otf")
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: ZonaPro-SemiBold;
+  src: url("https://www.public.gr/ZonaPro-SemiBold.0505d8991e8dfc66.woff2")
+      format("woff2"),
+    url("https://www.public.gr/ZonaPro-SemiBold.fe7623c6f8584ecc.otf")
+      format("opentype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: ZonaPro-Regular;
+  src: url("https://www.public.gr/ZonaPro-Regular.61ce94f2c7adec0d.woff2")
+      format("woff2"),
+    url("https://www.public.gr/ZonaPro-Regular.df2f6189e257b1ab.otf")
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: fontello;
+  src: url("https://www.public.gr/fontello.bb17b908b15f423b.woff2")
+      format("woff2"),
+    url("https://www.public.gr/fontello.09258ee4af734f74.woff") format("woff"),
+    url("https://www.public.gr/fontello.ff55530d7e480cbd.ttf")
+      format("truetype"),
+    url("https://www.public.gr/fontello.d2811b57bcb95831.eot#iefix")
+      format("embedded-opentype"),
+    url("https://www.public.gr/fontello.924667d53ced8cc9.svg#fontello")
+      format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: fontello;
+  src: url("https://www.public.gr/fontello-recycle.c99f5e57c1aa352d.woff2")
+      format("woff2"),
+    url("https://www.public.gr/fontello-recycle.5a9b1399b59436fb.woff")
+      format("woff"),
+    url("https://www.public.gr/fontello-recycle.2f568eae1ae933fe.ttf")
+      format("truetype"),
+    url("https://www.public.gr/fontello-recycle.17b245f62fcdb444.eot#iefix")
+      format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

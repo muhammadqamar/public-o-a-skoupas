@@ -1,0 +1,97 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
+.product {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: fluid-rem(1rem, 2rem);
+  padding: fluid-rem(1.5rem, 2.5rem) 0;
+  position: relative;
+  border-radius: 0.75rem;
+  -webkit-column-break-inside: avoid-column;
+  break-inside: avoid-column;
+
+  &:hover {
+    .button__icon {
+      transform: translateX(0.5em);
+    }
+  }
+
+  &:focus-within {
+    box-shadow: 0 0 0 0.2em c.adjust(c("brand"), $alpha: -0.7);
+  }
+
+  &__image-wrapper {
+    flex-grow: 1;
+    flex-basis: fluid-rem(14rem, 16rem);
+    aspect-ratio: 260 / 400;
+    display: flex;
+    width: min(#{fluid-rem(14rem, 16rem), 100%});
+    max-block-size: 25rem;
+    margin-inline: auto;
+  }
+
+  &__image {
+    flex: 1;
+
+    img {
+      @extend %contain;
+    }
+  }
+
+  &__header {
+    flex-grow: 999;
+    flex-basis: 0;
+    min-inline-size: 50%;
+  }
+
+  &__title {
+    font-size: fluid-rem(1.25rem, 1.75rem);
+    font-family: v("font-family-bold");
+  }
+
+  &__subtitle {
+    font-family: v("font-family-bold");
+    margin-block: 0.25em 0.5em;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    line-height: 1.75;
+    margin-block: 1em;
+  }
+
+  .button {
+    color: v("brand");
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.5em;
+    padding: 0.5em 0;
+    font-size: 1rem;
+    line-height: 1.333;
+    transition: all 0.3s ease;
+    width: max(14rem, 100%);
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+    }
+
+    b {
+      font-family: v(font-family-bold);
+    }
+
+    &__icon {
+      @include size(2rem);
+      flex: 0 0 2rem;
+      fill: currentColor;
+      transition: transform 0.3s ease;
+    }
+  }
+}

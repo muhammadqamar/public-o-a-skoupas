@@ -1,0 +1,22 @@
+<article class="type" style="--theme: {{theme}}">
+  <div class="type__inner-wrapper">
+    <picture class="type__image" role="decoration">
+      <source srcset="./assets/{{image}}.png" media="(max-width: 768px)" />
+      <img src="./assets/{{image}}@2x.png" alt="" />
+    </picture>
+    <header class="type__header">
+      <h3 class="type__title">{{title}}</h3>
+      <p class="type__text">{{text}}</p>
+    </header>
+  </div>
+  <div class="type__actions">
+    <each loop="link in cta">
+      <a class="type__cta button" href="{{link.url}}">
+        <span class="button__text">{{link.text}}</span>
+        <svg class="button__icon" viewBox="0 0 24 24">
+          <use xlink:href="#arrow-right"></use>
+        </svg>
+      </a>
+    </each>
+  </div>
+</article>

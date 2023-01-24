@@ -1,0 +1,129 @@
+@use "sass:color" as c;
+@use "../functions" as *;
+@use "../helpers" as *;
+@use "../mixins" as *;
+@use "../typography" as *;
+
+.type {
+  display: grid;
+  grid-template-rows: auto max-content;
+  gap: v("gap");
+
+  @media (width < 768px) {
+    .type__inner-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: calc(0.5 * var(--gap));
+    }
+
+    .type__image {
+      flex-basis: min(#{fluid-rem(14rem, 16rem)}, 100%);
+      flex-grow: 1;
+      align-self: flex-start;
+    }
+
+    .type__header {
+      flex-grow: 999;
+      flex-basis: 0;
+      min-inline-size: 50%;
+    }
+  }
+
+  &__inner-wrapper {
+    border-radius: 1rem;
+    background-color: v("off-white");
+    overflow: hidden;
+  }
+
+  &__image {
+    width: min(#{fluid-rem(14rem, 16rem)}, 100%);
+
+    img {
+      width: min(#{fluid-rem(14rem, 16rem)}, 100%);
+    }
+  }
+
+  &__header {
+    padding: fluid-rem(1.5rem, 2.5rem);
+  }
+
+  &__title {
+    font-size: fluid-rem(1.25rem, 1.75rem);
+    font-family: v("font-family-bold");
+    margin-block-end: 0.25em;
+    line-height: 1.25;
+    width: min(12ch, 100%);
+  }
+
+  &__text {
+    width: min(32ch, 100%);
+    font-size: 0.875rem;
+    line-height: 1.75;
+  }
+
+  &__actions {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: v("gap");
+
+    @media (width >= 560px) {
+      min-height: 6.25rem;
+    }
+  }
+
+  &__cta {
+    background-color: v("theme");
+  }
+
+  .button {
+    overflow: hidden;
+    border-radius: 0.5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 1.5em;
+    gap: 0.5em;
+    transition: all 0.3s ease-in-out;
+    border: 0.15em solid v("theme");
+    min-height: 3.5rem;
+
+    &:hover,
+    &:focus {
+      color: v("theme");
+      background-color: v("transparent");
+    }
+
+    &__text {
+      font-family: v("font-family-bold");
+      line-height: 1.333;
+    }
+
+    &__icon {
+      @include size(1.25em);
+      flex: 0 0 1.25em;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    .type__inner-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      // grid-template-columns: fluid-rem(14rem, 16rem) auto;
+      align-items: center;
+      gap: calc(0.5 * var(--gap));
+    }
+
+    .type__image {
+      flex-basis: min(#{fluid-rem(14rem, 16rem)}, 100%);
+      flex-grow: 1;
+      align-self: flex-start;
+    }
+
+    .type__header {
+      flex-grow: 999;
+      flex-basis: 0;
+      min-inline-size: 50%;
+    }
+  }
+}

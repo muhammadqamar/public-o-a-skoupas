@@ -1,6 +1,7 @@
 .parcel-cache
 .vscode
 dist
+__MACOSX
 .DS_Store
 **/.DS_Store
 node_modules
